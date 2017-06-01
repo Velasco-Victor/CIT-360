@@ -9,7 +9,7 @@ public class Test {
    * @throws IOException
    */
   public static void main(String[] args) throws IOException {
-    String s = "";
+    String s = "https://github.com/Velasco-Victor/CIT-360/blob/master/HttpURLConnection/Test.java";
     
     TinyURL tiny = new TinyURL();
     
