@@ -9,9 +9,13 @@ public class TinyURL  {
 	private static final String tinyUrl = "http://tinyurl.com/api-create.php?url=";
 
 	public String shorter(String url) throws IOException {
+		
 		String tinyUrlLookup = tinyUrl + url;
+		
 		BufferedReader reader = new BufferedReader(new InputStreamReader(new URL(tinyUrlLookup).openStream()));
+		
 		String tinyUrl = reader.readLine();
+		
 		return tinyUrl;
 	}
 }
